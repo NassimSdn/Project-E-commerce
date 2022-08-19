@@ -1,12 +1,96 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
     <title>Summer Klose</title>
 </head>
+
 <body>
-    
+    <div id="navbar">
+        <!-- Menu de catégorie -->
+        <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="closeNavbar">&times;</a>
+            <ul>
+                <h2>SummerKlose</h2>
+                <li><a href="#">Polo</a></li>
+                <li><a href="#">Short</a></li>
+                <li><a href="#">Espadrille</a></li>
+            </ul>
+        </div>
+
+        <a href="#" id="openBtn">
+            <img src="./public/assets/img/menu.png" alt="Menu">
+        </a>
+
+        <!-- Logo du site -->
+
+        <div id="logo">
+            <img src="./public/assets/img/LogoSummerKlose.png" alt="Logo du site">
+        </div>
+
+        <!-- Panier -->
+
+        <div id="panier">
+
+            <button id="btnBasket"><img src="./public/assets/img/ajouter-un-panier.png" alt="Panier"></button>
+
+            <div id="myModal" class="modal">
+
+                <div class="modalContent">
+
+                    <span class="closeModal">&times;</span>
+
+                    <p></p>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <section>
+        <div id="picturePres">
+            <img src="./public/assets/img/MenSahara.jpg" alt="">
+        </div>
+        <div id="paragraphPres">
+            <p>Bienvenue sur SummeKlose, nous sommes un site D'e-commerce de vente de vétement. En ce moment profiter de
+                la collection d'été avec Nos Polo, Short et Espadrille.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="category">Polo</h3>
+        <div class="article">
+
+        </div>
+    </section>
+
+    <section>
+        <h3 class="category">Short</h3>
+        <div class="article">
+
+        </div>
+    </section>
+
+    <section>
+        <h3 class="category">Espadrille</h3>
+        <div class="article">
+
+        </div>
+    </section>
+
+    <footer>
+        <a href=""><img src="./public/assets/img/mail.png" alt=""></a>
+        <a href=""><img src="./public/assets/img/facebook.png" alt=""></a>
+        <a href=""><img src="./public/assets/img/twitter.png" alt=""></a>
+        <a href=""><img src="./public/assets/img/instagram.png" alt=""></a>
+    </footer>
+    <script src="./public/assets/js/script.js"></script>
 </body>
+
 </html>
