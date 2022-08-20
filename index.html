@@ -6,21 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
     <title>Summer Klose</title>
 </head>
 
 <body>
-    <div id="navbar">
-        <!-- Menu de catégorie -->
-        <div id="mySidenav" class="sidenav">
-            <a id="closeBtn" href="#" class="closeNavbar">&times;</a>
-            <ul>
-                <h2>SummerKlose</h2>
-                <li><a href="#">Polo</a></li>
-                <li><a href="#">Short</a></li>
-                <li><a href="#">Espadrille</a></li>
-            </ul>
-        </div>
+    <div id="navbar">  
+        
+        <!-- Buton du menu -->
 
         <a href="#" id="openBtn">
             <img src="./public/assets/img/menu.png" alt="Menu">
@@ -32,27 +27,51 @@
             <img src="./public/assets/img/LogoSummerKlose.png" alt="Logo du site">
         </div>
 
-        <!-- Panier -->
+        <!-- Buton du Panier -->
 
-        <div id="panier">
-
-            <button id="btnBasket"><img src="./public/assets/img/ajouter-un-panier.png" alt="Panier"></button>
-
-            <div id="myModal" class="modal">
-
-                <div class="modalContent">
-
-                    <span class="closeModal">&times;</span>
-
-                    <p></p>
-
-                </div>
-
-            </div>
-        </div>
+        <button id="btnBasket"><img src="./public/assets/img/ajouter-un-panier.png" alt="Panier"></button>
 
     </div>
-    <section>
+    
+    <!-- Menu de catégorie -->
+
+    <div id="mySidenav" class="sidenav">
+            <a id="closeBtn" href="#" class="closeNavbar">&times;</a>
+            <ul>
+                <h2>SummerKlose</h2>
+                <li><a href="./index.html#sectionAccueil">Accueil</a></li>
+                <li><a href="./index.html#sectionPolo">Polo</a></li>
+                <li><a href="./index.html#sectionShort">Short</a></li>
+                <li><a href="./index.html#sectionShoes">Espadrille</a></li>
+            </ul>
+    </div>
+
+        <!-- Modal du Panier -->
+
+    <div id="panier">
+
+        <div id="myModal" class="modal">
+
+            <div class="modalContent">
+
+                <span class="closeModal">&times;</span>
+
+                <h2>Votre panier :</h2>
+
+                <div id="contentBasket"></div>
+
+                <button>Je commande !</button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section du site -->
+
+    <!-- Accueil -->
+
+    <section id="sectionAccueil">
         <div id="picturePres">
             <img src="./public/assets/img/MenSahara.jpg" alt="">
         </div>
@@ -63,26 +82,38 @@
         </div>
     </section>
 
-    <section>
+    <!-- Polo -->
+
+    <section id="sectionPolo">
         <h3 class="category">Polo</h3>
-        <div class="article">
+        <div id="cardPolo">
 
         </div>
     </section>
 
-    <section>
+    <!-- Short -->
+
+    <section id="sectionShort">
         <h3 class="category">Short</h3>
-        <div class="article">
+        <div id="cardShort">
 
         </div>
     </section>
 
-    <section>
+    <!-- Espadrille -->
+
+    <section id="sectionShoes">
         <h3 class="category">Espadrille</h3>
-        <div class="article">
+        <div id="cardShoes">
 
         </div>
     </section>
+
+    <!-- Bouton scroll to top -->
+
+    <div id="scroll_to_top">
+        <a href="#top"><img src="./public/assets/img/ups.png" alt="Retourner en haut" /></a>
+    </div>
 
     <footer>
         <a href=""><img src="./public/assets/img/mail.png" alt=""></a>
